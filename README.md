@@ -9,14 +9,14 @@
 
 Сборка и зависимости не нужны: это статичные HTML, CSS и JS.
 
-1. Откройте `edinoe-okno.html` в браузере двойным кликом.
+1. Откройте `index.html` в браузере двойным кликом.
 2. Либо запустите локальный сервер из корня репозитория:
 
    ```bash
    npx --yes serve .
    ```
 
-   и откройте `http://localhost:3000/edinoe-okno.html`.
+   и откройте `http://localhost:3000`.
 
 Мобильная версия: DevTools → Toggle device toolbar (Ctrl+Shift+M) → ширина 375px.
 
@@ -24,18 +24,16 @@
 
 | Файл | Страница | Макет |
 |------|----------|-------|
-| `edinoe-okno.html` | Единое окно (главная раздела) | «Единое окно» |
+| `index.html` | Единое окно (стартовая страница) | «Единое окно» |
 | `obrazovatelnyj-kredit.html` | Образовательный кредит | «Образовательный кредит. Единое окно» |
 | `obschezhitie.html` | Общежитие | «Общежитие. Единое окно» |
 | `stipendii.html` | Стипендии | «Стипендии. Единое окно» |
 | `materialnaya-pomoshch.html`, `svo.html`, `semyi.html`, `psihologicheskaya-pomoshch.html`, `yuridicheskaya-pomoshch.html` | Остальные услуги | Отдельных макетов нет, свёрстаны в общем стиле раздела |
 
-`index.html` — концепт главной страницы сайта из более раннего задания. К «Единому окну» не относится и оставлен без изменений.
-
 ## Структура
 
 ```
-├── edinoe-okno.html, obrazovatelnyj-kredit.html, obschezhitie.html, stipendii.html, …
+├── index.html, obrazovatelnyj-kredit.html, obschezhitie.html, stipendii.html, …
 ├── css/window.css         стили раздела «Единое окно»
 ├── js/window.js           меню, анимации при скролле, карусель, счётчик
 ├── assets/window/         изображения раздела (WebP) и логотип

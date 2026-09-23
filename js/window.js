@@ -23,7 +23,7 @@
     };
 
     menu.querySelectorAll("li").forEach(function (li, i) { li.style.setProperty("--i", i); });
-    var here = location.pathname.split("/").pop() || "edinoe-okno.html";
+    var here = location.pathname.split("/").pop() || "index.html";
     menu.querySelectorAll("a").forEach(function (a) {
       if (a.getAttribute("href") === here) a.setAttribute("aria-current", "page");
     });
