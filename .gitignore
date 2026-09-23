@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+assets/_master_id/
+*.log
+.vscode/
+.idea/

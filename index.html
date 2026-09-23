@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Сочинский государственный университет — образование у моря: программы, поступление, новости и события СочиГУ.">
+  <title>Сочинский государственный университет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
+  </div>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="СочиГУ — на главную">
+        <img class="logo-mark" src="assets/logo-sochigu.png" width="44" height="44" alt="">
+        <span class="logo-text">
+          <strong>СочиГУ</strong>
+        </span>
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Главное меню">
+        <ul class="nav-list">
+          <li><a href="#about">О СочиГУ</a></li>
+          <li><a href="#admission">Поступление</a></li>
+          <li><a href="#programs">Образование</a></li>
+          <li><a href="edinoe-okno.html">Единое окно</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-accent btn-sm header-cta" href="#admission">Поступить</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-glow hero-glow-1"></div>
+        <div class="hero-glow hero-glow-2"></div>
+        <div class="hero-ring"></div>
+        <img class="hero-blueprint" src="assets/blueprint.svg" alt="">
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-anim" style="--hero-delay: 0ms">Твой выбор сегодня —<br>твой успех завтра</h1>
+          <p class="hero-lead hero-anim" style="--hero-delay: 120ms">СочиГУ — это современное образование, наука и практика.</p>
+          <div class="hero-cta hero-anim" style="--hero-delay: 220ms">
+            <a class="btn btn-accent btn-lg" href="#admission">Поступить</a>
+            <a class="btn btn-outline-light btn-lg" href="https://rutube.ru/channel/25548246/" target="_blank" rel="noopener">Смотреть видео</a>
+          </div>
+        </div>
+
+        <div class="hero-visual hero-anim hero-anim-right" style="--hero-delay: 160ms">
+          <img
+            class="hero-students"
+            src="assets/hero-students.webp"
+            alt="Студенты СочиГУ"
+            width="1200"
+            height="800"
+            decoding="async"
+            fetchpriority="high"
+          >
+        </div>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Туризм</span><span>Архитектура</span><span>IT</span><span>Экономика</span><span>Сервис</span><span>Право</span><span>Педагогика</span><span>Гостиничный бизнес</span><span>Ландшафт</span><span>Международные отношения</span>
+          </div>
+          <div class="marquee-group">
+            <span>Туризм</span><span>Архитектура</span><span>IT</span><span>Экономика</span><span>Сервис</span><span>Право</span><span>Педагогика</span><span>Гостиничный бизнес</span><span>Ландшафт</span><span>Международные отношения</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container levels-wrap reveal">
+      <nav class="levels-bar" aria-label="Уровни образования">
+        <a class="level-item is-active" href="#programs" data-level="bachelor">
+          <span class="level-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 26V14l12-6 12 6v12l-12 6-12-6Z" stroke="currentColor" stroke-width="1.8"/><path d="M20 16v16M8 14l12 6 12-6" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span>Бакалавриат</span>
+        </a>
+        <a class="level-item" href="#programs" data-level="master">
+          <span class="level-icon">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M10 28h20M12 28V16l8-4 8 4v12" stroke="currentColor" stroke-width="1.8"/><path d="M16 20h8M16 24h8" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span>Магистратура</span>
+        </a>
+        <a class="level-item" href="#programs" data-level="phd">
+          <span class="level-icon">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="14" r="5" stroke="currentColor" stroke-width="1.8"/><path d="M10 30c1.8-5 5-7.5 10-7.5S28.2 25 30 30" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span>Аспирантура</span>
+        </a>
+        <a class="level-item" href="#programs" data-level="college">
+          <span class="level-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="10" width="24" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 16h24M14 10V8h12v2" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <span>Колледж</span>
+        </a>
+      </nav>
+    </div>
+
+    <section class="features" aria-label="Преимущества">
+      <div class="container features-row reveal-stagger">
+        <article class="feature-item reveal">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 28V14l12-6 12 6v14H8Z" stroke="currentColor" stroke-width="1.8"/><path d="M16 28v-8h8v8" stroke="currentColor" stroke-width="1.8"/></svg>
+          </span>
+          <div>
+            <h2>Современный кампус</h2>
+            <p>в центре курортного Сочи</p>
+          </div>
+        </article>
+        <article class="feature-item reveal">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="1.8"/><path d="M20 10v10l6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <h2>Международные программы</h2>
+            <p>обмены и стажировки</p>
+          </div>
+        </article>
+        <article class="feature-item reveal">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M12 26c2-5 5-8 8-8s6 3 8 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="20" cy="14" r="4" stroke="currentColor" stroke-width="1.8"/><path d="M10 30h20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <h2>Практика у моря</h2>
+            <p>отели, курорты, бизнес</p>
+          </div>
+        </article>
+        <article class="feature-item reveal">
+          <span class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M10 26l6-10 5 7 3-5 6 8H10Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <h2>Сильное комьюнити</h2>
+            <p>наука, спорт, творчество</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section news" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-label">Актуально</p>
+            <h2 id="news-title">Новости</h2>
+          </div>
+          <a class="text-link" href="https://sochi.university/" target="_blank" rel="noopener">Все новости</a>
+        </div>
+
+        <div class="news-grid reveal-stagger">
+          <article class="news-card news-card-featured reveal">
+            <a href="https://sochi.university/news/v-sochinskom-gosudarstvennom-universitete-prodolzhaetsya-priem-dokumentov-v-magistraturu-/" target="_blank" rel="noopener">
+              <div class="news-meta">
+                <time datetime="2026-07-15">15 июля</time>
+                <span class="tag">Приём</span>
+              </div>
+              <h3>В Сочинском государственном университете продолжается приём документов в магистратуру</h3>
+              <p>Абитуриенты могут подать документы очно и онлайн. Приёмная кампания 2026 года открыта.</p>
+            </a>
+          </article>
+
+          <article class="news-card reveal">
+            <a href="https://sochi.university/news/prodolzhaetsya-nabor-na-gumanitarnye-missii-vsks-na-leto-2026-goda/" target="_blank" rel="noopener">
+              <div class="news-meta">
+                <time datetime="2026-07-16">16 июля</time>
+                <span class="tag">Общее</span>
+              </div>
+              <h3>Продолжается набор на гуманитарные миссии ВСКС на лето 2026 года</h3>
+            </a>
+          </article>
+
+          <article class="news-card reveal">
+            <a href="https://sochi.university/news/na-start-vnimanie-rossiya/" target="_blank" rel="noopener">
+              <div class="news-meta">
+                <time datetime="2026-07-16">16 июля</time>
+                <span class="tag">Общее</span>
+              </div>
+              <h3>На старт, внимание, Россия!</h3>
+            </a>
+          </article>
+
+          <article class="news-card reveal">
+            <a href="https://sochi.university/news/komanda-iz-sochigu-voshla-v-chislo-silneyshikh-na-finale-turnira-znanie-igra-po-sportivnomu-chto-gde/" target="_blank" rel="noopener">
+              <div class="news-meta">
+                <time datetime="2026-07-15">15 июля</time>
+                <span class="tag">Студенческая жизнь</span>
+              </div>
+              <h3>Команда СочиГУ — среди сильнейших на финале Турнира «Знание.Игра»</h3>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section events" id="events" aria-labelledby="events-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-label">Календарь</p>
+            <h2 id="events-title">Ближайшие события</h2>
+          </div>
+          <a class="text-link" href="https://sochi.university/" target="_blank" rel="noopener">Календарь мероприятий</a>
+        </div>
+
+        <div class="events-list reveal-stagger">
+          <article class="event-item reveal">
+            <time datetime="2026-07-26">
+              <span class="event-day">26</span>
+              <span class="event-month">июля</span>
+            </time>
+            <div class="event-body">
+              <span class="tag">Студенческие</span>
+              <h3>Проект «Университетские смены»</h3>
+              <p>Образовательные смены для школьников и абитуриентов на площадке СочиГУ.</p>
+            </div>
+            <a class="btn btn-outline" href="https://sochi.university/" target="_blank" rel="noopener">Подробнее</a>
+          </article>
+
+          <article class="event-item reveal">
+            <time datetime="2026-06-20">
+              <span class="event-day">20</span>
+              <span class="event-month">июня</span>
+            </time>
+            <div class="event-body">
+              <span class="tag">Поступающим</span>
+              <h3>Старт работы приёмной комиссии</h3>
+              <p>Начало приёма документов на программы бакалавриата, специалитета и магистратуры.</p>
+            </div>
+            <a class="btn btn-outline" href="#admission">К поступлению</a>
+          </article>
+
+          <article class="event-item reveal">
+            <time datetime="2026-08-15">
+              <span class="event-day">15</span>
+              <span class="event-month">авг</span>
+            </time>
+            <div class="event-body">
+              <span class="tag">Поступающим</span>
+              <h3>День открытых дверей СочиГУ</h3>
+              <p>Экскурсии по кампусу, встречи с преподавателями и консультации по программам.</p>
+            </div>
+            <a class="btn btn-outline" href="https://sochi.university/" target="_blank" rel="noopener">Записаться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-intro reveal reveal-right">
+          <p class="section-label">О вузе</p>
+          <h2 id="about-title">Университет, где учёба встречается с курортной экономикой</h2>
+          <p>
+            Сочинский государственный университет готовит специалистов для туризма,
+            сервиса, строительства, экономики, права, педагогики и IT —
+            в городе, где эти отрасли развиваются каждый день.
+          </p>
+        </div>
+
+        <ul class="about-points reveal-stagger">
+          <li class="reveal">
+            <span class="about-num">01</span>
+            <h3>История и статус</h3>
+            <p>Ведущий государственный вуз Сочи с многолетней академической традицией и аккредитованными программами.</p>
+          </li>
+          <li class="reveal">
+            <span class="about-num">02</span>
+            <h3>Практика у моря</h3>
+            <p>Стажировки и партнёрства с гостиницами, курортами, девелоперами и городскими организациями.</p>
+          </li>
+          <li class="reveal">
+            <span class="about-num">03</span>
+            <h3>Кампус в Сочи</h3>
+            <p>Учёба в городе олимпийского наследия, событийной экономики и круглогодичного туризма.</p>
+          </li>
+          <li class="reveal">
+            <span class="about-num">04</span>
+            <h3>Сообщество</h3>
+            <p>Активная студенческая жизнь, наука, международные проекты и сильное онлайн-комьюнити.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section programs" id="programs" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="section-label">Образование</p>
+            <h2 id="programs-title">Популярные направления</h2>
+          </div>
+          <p class="programs-count" id="programs-count" aria-live="polite"></p>
+        </div>
+
+        <div class="programs-grid reveal-stagger" id="programs-grid"></div>
+        <p class="programs-empty" id="programs-empty" hidden>Нет программ для выбранного уровня.</p>
+      </div>
+    </section>
+
+    <section class="section admission" id="admission" aria-labelledby="admission-title">
+      <div class="container">
+        <div class="section-head light reveal">
+          <div>
+            <p class="section-label">Абитуриентам</p>
+            <h2 id="admission-title">Как поступить в СочиГУ</h2>
+          </div>
+        </div>
+
+        <ol class="steps reveal-stagger">
+          <li class="reveal">
+            <span class="step-num">1</span>
+            <h3>Выберите программу</h3>
+            <p>Изучите направления бакалавриата, специалитета и магистратуры.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">2</span>
+            <h3>Подготовьте документы</h3>
+            <p>Паспорт, аттестат/диплом, фотографии и документы об индивидуальных достижениях.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">3</span>
+            <h3>Подайте заявление</h3>
+            <p>Лично в приёмной комиссии или через сервис «Поступление в вуз онлайн».</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">4</span>
+            <h3>Следите за конкурсом</h3>
+            <p>Проверяйте списки и сроки зачисления на сайте университета.</p>
+          </li>
+        </ol>
+
+        <div class="admission-panel reveal">
+          <div>
+            <h3>Приёмная комиссия</h3>
+            <p>г. Сочи, ул. Пластунская, 94</p>
+            <p>
+              <a href="tel:+78622649121">8 (862) 264-91-21</a> ·
+              <a href="tel:88002007710">8-800-200-77-10</a>
+            </p>
+            <p><a href="mailto:pk@sutr.ru">pk@sutr.ru</a></p>
+            <p class="muted">Пн–Пт 9:00–17:00 · Сб 9:00–13:00 · Вс — выходной</p>
+          </div>
+          <div class="admission-actions">
+            <a class="btn btn-accent btn-lg" href="https://sochi.university/" target="_blank" rel="noopener">Подать документы</a>
+            <a class="btn btn-outline-light btn-lg" href="https://sochi.university/" target="_blank" rel="noopener">Правила приёма</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="program-modal" id="program-modal" hidden>
+    <div class="program-modal-backdrop" data-close-modal></div>
+    <div
+      class="program-modal-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="program-modal-title"
+      tabindex="-1"
+    >
+      <article class="program-detail-card">
+        <div class="program-detail-top">
+          <span class="program-detail-form" id="program-modal-form">Очная</span>
+          <button type="button" class="program-detail-close" data-close-modal aria-label="Закрыть">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M7 17L17 7M7 7l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="program-detail-body">
+          <h3 id="program-modal-title">Программа</h3>
+          <p class="program-detail-subtitle" id="program-modal-subtitle"></p>
+          <p class="program-detail-note" id="program-modal-note" hidden></p>
+          <p class="program-detail-budget" id="program-modal-budget" hidden>
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="9" cy="8" r="2.2" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="15" cy="8" r="2.2" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M5.5 17c.6-2.2 2.2-3.4 3.5-3.4s2.9 1.2 3.5 3.4M11.5 17c.6-2.2 2.2-3.4 3.5-3.4s2.9 1.2 3.5 3.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            Есть бюджетные места
+          </p>
+        </div>
+
+        <div class="program-detail-meta">
+          <div class="program-detail-meta-item">
+            <span class="program-detail-meta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M9.2 9.2h3.4a2.1 2.1 0 0 1 0 4.2H9.2V9.2Zm0 4.2H13.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div>
+              <span class="program-detail-meta-label">стоимость</span>
+              <strong id="program-modal-price">—</strong>
+            </div>
+          </div>
+          <div class="program-detail-meta-item">
+            <span class="program-detail-meta-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="5.5" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M8 3.5v4M16 3.5v4M4 10.5h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <div>
+              <span class="program-detail-meta-label">срок обучения</span>
+              <strong id="program-modal-duration">—</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-detail-actions">
+          <a class="btn btn-accent" id="program-modal-cta" href="#admission">Подать документы</a>
+          <a class="btn btn-ghost-dark" href="https://sochi.university/" target="_blank" rel="noopener">На сайте СочиГУ</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <footer class="site-footer" id="contacts">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#top">
+          <img class="logo-mark" src="assets/logo-sochigu.png" width="48" height="48" alt="">
+          <span class="logo-text">
+            <strong>СочиГУ</strong>
+            <span>Сочинский государственный университет</span>
+          </span>
+        </a>
+        <p>ФГБОУ ВО «Сочинский государственный университет»</p>
+      </div>
+
+      <nav aria-label="Быстрые ссылки">
+        <h2>Разделы</h2>
+        <ul>
+          <li><a href="#about">О СочиГУ</a></li>
+          <li><a href="#programs">Образование</a></li>
+          <li><a href="#news">Новости</a></li>
+          <li><a href="#admission">Поступление</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2>Контакты</h2>
+        <ul>
+          <li>г. Сочи, ул. Пластунская, 94</li>
+          <li><a href="tel:+78622681234">8 (862) 268-12-34</a></li>
+          <li><a href="mailto:university@sutr.ru">university@sutr.ru</a></li>
+          <li><a href="mailto:pk@sutr.ru">pk@sutr.ru — приёмная комиссия</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Соцсети</h2>
+        <ul class="socials">
+          <li><a href="https://sochi.university/" target="_blank" rel="noopener">ВКонтакте</a></li>
+          <li><a href="https://sochi.university/" target="_blank" rel="noopener">Telegram</a></li>
+          <li><a href="https://sochi.university/" target="_blank" rel="noopener">MAX</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Сочинский государственный университет</p>
+      <p>
+        <a href="https://sochi.university/" target="_blank" rel="noopener">Сведения об образовательной организации</a>
+      </p>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Наверх" aria-hidden="true" tabindex="-1" inert>↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
