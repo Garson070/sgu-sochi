@@ -28,7 +28,8 @@
 | `obrazovatelnyj-kredit.html` | Образовательный кредит | «Образовательный кредит. Единое окно» |
 | `obschezhitie.html` | Общежитие | «Общежитие. Единое окно» |
 | `stipendii.html` | Стипендии | «Стипендии. Единое окно» |
-| `materialnaya-pomoshch.html`, `svo.html`, `semyi.html`, `psihologicheskaya-pomoshch.html`, `yuridicheskaya-pomoshch.html` | Остальные услуги | Отдельных макетов нет, свёрстаны в общем стиле раздела |
+| `materialnaya-pomoshch.html` | Материальная помощь | «Материальная помощь. Единое окно» |
+| `svo.html`, `semyi.html`, `psihologicheskaya-pomoshch.html`, `yuridicheskaya-pomoshch.html` | Остальные услуги | Отдельных макетов нет, свёрстаны в общем стиле раздела |
 
 ## Структура
 
