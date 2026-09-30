@@ -72,6 +72,8 @@
     [".pass__item", "up", 100],
     [".info-card", "up", 120],
     [".mp-doc", "up", 90],
+    [".fam-group", "up"],
+    [".fam-who li", "left", 120],
     [".aid__row", "up"],
     [".step", "up", 0],
     [".grant", "up", 120],
