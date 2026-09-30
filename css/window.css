@@ -1379,3 +1379,60 @@ a.prog:hover .prog__ico { transform: rotate(45deg); }
   .step__body br { display: none; }
   .page-aid .banners { margin-top: 40px; }
 }
+
+/* ==========================================================================
+   Меры поддержки участников СВО
+   ========================================================================== */
+
+.link-plain { color: var(--blue); }
+.link-plain:hover { text-decoration: underline; text-underline-offset: 3px; }
+.dot-list--tight li { padding-left: 17px; }
+.dot-list--48 li { padding-left: 48px; }
+
+.svo-lead { padding-top: 42px; }
+.svo-table { max-width: 1339px; margin-top: 29px; }
+.svo-table .aid__head, .svo-table .aid__row { grid-template-columns: 332px 331px 332px 1fr; }
+.svo-table .aid__head { min-height: 86px; }
+.svo-table .aid__head span:first-child { padding-left: 24px; }
+.svo-table .aid__head span + span { padding-left: 25px; }
+.svo-table .aid__row { padding: 28px 0 36px; }
+.svo-table .aid__row::after { left: 20px; right: 20px; }
+.svo-table .aid__row span:first-child { padding-left: 13px; color: var(--text); font-weight: 600; }
+.svo-table .aid__row span + span { padding-left: 25px; }
+.svo-table .aid__row span:nth-child(2) { font-weight: 400; }
+.svo-table .aid__row span:last-child { padding-left: 7px; }
+.svo-table .aid__row:last-child { padding-bottom: 22px; }
+.svo-table .sp { display: block; height: 20px; }
+.svo-after { padding-top: 28px; }
+
+.svo-sec { padding-top: 42px; }
+.svo-center { text-align: center; }
+.steps--sm { margin-top: 12px; }
+.steps--sm .step + .step { margin-top: 26px; }
+.steps--sm .step__bar { gap: 14px; min-height: 72px; padding: 10px 32px; font-size: 26px; line-height: 32px; }
+.steps--sm .step__body { margin-top: 17px; }
+.svo-term { padding-top: 24px; }
+.svo-notice { margin-top: 44px; padding-bottom: 32px; line-height: 31px; }
+.svo-notice br { display: none; }
+.svo-named { padding-top: 36px; }
+.svo-named .pill-list { width: min(869px, 100%); gap: 7px; margin-top: 34px; }
+
+@media (max-width: 1024px) {
+  .svo-table .aid__head, .svo-table .aid__row { grid-template-columns: 1.2fr .8fr .8fr 1.2fr; }
+  .steps--sm .step__bar { font-size: 22px; line-height: 28px; }
+}
+
+@media (max-width: 768px) {
+  .svo-lead, .svo-sec { padding-top: 28px; }
+  .svo-table .aid__row { padding: 18px 16px; }
+  .svo-table .aid__row span, .svo-table .aid__row span + span, .svo-table .aid__row span:first-child, .svo-table .aid__row span:last-child { padding: 0; }
+  .svo-table .aid__row span:first-child { display: block; color: var(--navy); font-size: 16px; }
+  .svo-table .sp { height: 6px; }
+  .svo-after { padding-top: 16px; }
+  .svo-sec br, .svo-lead br, .svo-after br, .svo-term br, .svo-notice br { display: none; }
+  .svo-sec .keep-br br { display: inline; }
+  .svo-table .aid__head, .svo-table .aid__row { grid-template-columns: 1fr; }
+  .steps--sm .step__bar { min-height: 52px; font-size: 18px; line-height: 22px; }
+  .svo-notice { margin-top: 24px; line-height: 24px; }
+  .svo-named { padding-top: 28px; }
+}
