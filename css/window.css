@@ -1055,7 +1055,8 @@ a.prog:hover .prog__ico { transform: rotate(45deg); }
   .burger[aria-expanded="true"] .burger__lines i:nth-child(3) { top: 7.5px; }
   .menu { clip-path: circle(0 at calc(100% - 44px) 44px); }
   .menu.is-open { clip-path: circle(150% at calc(100% - 44px) 44px); }
-  .hero__eagle { right: -35%; top: 70px; width: 130%; }
+  /* герб целиком по ширине экрана, стоит на нижнем крае шапки; пустой низ картинки (~43%) обрезаем */
+  .hero__eagle { left: 0; right: auto; top: auto; bottom: -48px; width: 100%; height: auto; aspect-ratio: 902 / 590; object-fit: cover; object-position: top; }
   .hero__body { position: relative; left: auto; top: auto; padding: 124px var(--side) 0; }
   .hero__ministry { width: 200px; }
   .hero h1, .hero__title { margin-top: 22px; font-size: 30px; line-height: 36px; }
