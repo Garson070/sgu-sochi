@@ -797,7 +797,7 @@ a.prog:hover .prog__ico { transform: rotate(45deg); }
 .grant { font-size: 14px; line-height: 22px; color: var(--table); font-family: var(--font-alt); }
 .grant h3 { margin-bottom: 18px; color: var(--text); font-family: var(--font); font-size: 18px; font-weight: 600; line-height: 20px; }
 .grant dl { margin: 0; }
-.grant dt { display: inline; color: #c3c1c1; }
+.grant dt { display: inline; color: #767676; }
 .grant dd { display: inline; margin: 0; }
 .grant__foot { display: flex; align-items: baseline; justify-content: space-between; margin-top: 12px; }
 .grant__foot a:first-child { color: var(--blue); }
@@ -1073,7 +1073,8 @@ a.prog:hover .prog__ico { transform: rotate(45deg); }
   .socials a { width: 46px; height: 46px; }
 
   .services { grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 32px; padding: 0 var(--side); }
-  .tile { aspect-ratio: 1 / 1.02; padding: 16px 14px; font-size: 16px; line-height: 20px; }
+  /* квадрат, пока текст помещается; длинные подписи растягивают плитку, а не заезжают под кружок */
+  .tile { aspect-ratio: auto; min-height: calc((100vw - 2 * var(--side) - 8px) / 2 * 1.02); padding: 16px 14px 60px; font-size: 16px; line-height: 20px; overflow-wrap: break-word; hyphens: auto; }
   .tile__dot, .topic .tile__dot { left: 14px; bottom: 14px; width: 34px; height: 34px; }
   .tile__dot::after { width: 18px; height: 18px; }
 
@@ -1084,8 +1085,8 @@ a.prog:hover .prog__ico { transform: rotate(45deg); }
   .topics { margin-top: 24px !important; }
   .topics__row { padding: 0 var(--side); gap: 8px !important; }
   .topics__row + .topics__row { margin-top: 8px; }
-  .topic { flex: 0 1 calc((100% - 8px) / 2); height: auto; min-height: 150px; padding: 16px 14px 60px; font-size: 15px; line-height: 19px; }
-  .topic br { display: none; }
+  .topic { flex: 0 1 calc((100% - 8px) / 2); height: auto; min-height: 150px; padding: 16px 14px 60px; font-size: 15px; line-height: 19px; overflow-wrap: break-word; hyphens: auto; }
+  .topic br, .tile br { display: none; }
 
   .docs-row { margin-top: 24px; gap: 12px; }
   .doc-card, .doc-card--wide { padding: 20px !important; border-radius: 16px; font-size: 16px; line-height: 22px; }
@@ -1271,6 +1272,7 @@ a.prog:hover .prog__ico { transform: rotate(45deg); }
 
 @media (max-width: 420px) {
   .hero h1, .hero__title { font-size: 27px; line-height: 32px; }
+  .tile { font-size: 15px; line-height: 19px; }
   .footer .wrap { grid-template-columns: 1fr; }
   .footer__wordmark { width: 190px; }
 }
