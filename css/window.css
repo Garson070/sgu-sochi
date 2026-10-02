@@ -1083,9 +1083,10 @@ a.prog:hover .prog__ico { transform: rotate(45deg); }
   .band--solid { min-height: 80px; }
 
   .topics { margin-top: 24px !important; }
-  .topics__row { padding: 0 var(--side); gap: 8px !important; }
-  .topics__row + .topics__row { margin-top: 8px; }
-  .topic { flex: 0 1 calc((100% - 8px) / 2); height: auto; min-height: 150px; padding: 16px 14px 60px; font-size: 15px; line-height: 19px; overflow-wrap: break-word; hyphens: auto; }
+  /* одна сетка в две колонки на все ряды: нечётная карточка встаёт слева, а не повисает по центру */
+  .topics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 0 var(--side); }
+  .topics__row { display: contents; }
+  .topic { height: auto; min-height: 150px; padding: 16px 14px 60px; font-size: 15px; line-height: 19px; overflow-wrap: break-word; hyphens: auto; }
   .topic br, .tile br { display: none; }
 
   .docs-row { margin-top: 24px; gap: 12px; }
